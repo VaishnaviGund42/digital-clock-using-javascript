@@ -3,6 +3,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: black;
+  background: #ffcce6;
   margin: 0;
+}
+.digital-clock {
+  font-family: 'Courier New', monospace;
+  font-size: 5rem;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px 50px;
+  border-radius: 20px;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
 }
