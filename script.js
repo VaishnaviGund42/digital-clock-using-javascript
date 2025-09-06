@@ -15,3 +15,17 @@ function updateClock() {
   if (hours === 0) {
     hours = 12;
   }
+   // Add leading zero
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
+  document.getElementById("session").innerText = session;
+
+  setTimeout(updateClock, 1000);
+}
+
+updateClock();
